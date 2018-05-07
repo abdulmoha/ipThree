@@ -4,9 +4,10 @@
   background-repeat: repeat;
 }
 .header{
- height: 500px;
+  height: 500px;
 }
 h1{
+  margin: 0 auto;
   color: LavenderBlush;
   padding-left: 40%;
   padding-top: 10%;

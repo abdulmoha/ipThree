@@ -1,5 +1,7 @@
 .container-big{
   width: 100%;
+  background-color: black;
+  background: url("../img/bg11.jpg");
   height: 2160px;
 }
 .header{
@@ -7,10 +9,11 @@ height: 500px;
 }
 h1{
   color: LavenderBlush;
+  padding-left: 40%;
   padding-top: 10%;
   padding-bottom: 10%;
   font-size: 75px;
-  border: 1px solid black;
+  border: 1px solid #e34d3d;
 }
 .container{
   width: 1500px;
@@ -18,11 +21,14 @@ h1{
   padding-right: 0px;
   padding-left: 0px;
 }
+.play{
+  padding-left: 10%;
+}
 .about{
   color: LavenderBlush;
   padding: 15px;
   float: right;
-  border: 1px solid black;
+  border: 1px solid #e34d3d;
 }
 .rules{
   font-style: italic;

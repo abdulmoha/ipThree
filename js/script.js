@@ -26,3 +26,13 @@ $(document).ready(function ()  {
                 }  }
 
            }
+
+
+   $(".btn").click(function(event){
+        event.preventDefault();
+       var passedNumber =  parseInt($("#num").val());
+
+      test(passedNumber);
+       arr.forEach(function(e){
+             $("#list-items").append($("<li>").html(e));
+         });

@@ -1,6 +1,6 @@
 $(document).ready(function ()  {
     //create an array
-    var arr = [];
+    var array = [];
     //begin the loop
     function test(num){
 
@@ -10,19 +10,19 @@ $(document).ready(function ()  {
                if (i % 3 === 0 && i % 5 === 0 ) {
                     //push to the array
                     console.log(i+" pingpong")
-                    arr.push("pingpong");
+                    array.push("pingpong");
                 }
                 //detect values divisible by 3
                 else if (i % 3 === 0) {
                     console.log(i+" ping")
-                    arr.push("ping");
+                    array.push("ping");
                 }
                 //detect values divisible by 15
                 else if (i % 5 === 0) {
                     console.log(i+" pong")
-                    arr.push("pong");
+                    array.push("pong");
                 }else{
-                    arr.push(i);
+                    array.push(i);
                 }  }
 
            }
@@ -30,9 +30,18 @@ $(document).ready(function ()  {
 
    $(".btn").click(function(event){
         event.preventDefault();
+        
+        array=[];
+
+      $("#items").empty("");
        var passedNumber =  parseInt($("#num").val());
 
       test(passedNumber);
-       arr.forEach(function(e){
-             $("#list-items").append($("<li>").html(e));
+       array.forEach(function(e){
+             $("#items").append($("<li>").html(e));
+
          });
+
+
+    });
+});

@@ -1,8 +1,7 @@
 .container-big{
   width: 100%;
-  background-color: black;
   background: url("../img/bg11.jpg");
-  height: 2160px;
+  background-repeat: repeat;
 }
 .header{
 height: 500px;
@@ -23,6 +22,7 @@ h1{
 }
 .play{
   padding-left: 10%;
+  padding-bottom: 20%;
 }
 .about{
   color: LavenderBlush;
